@@ -1,0 +1,103 @@
+header{
+    padding: 70px;
+    color: rgb(117, 117, 117);
+    text-align: center;
+    background-image: url(floral.jpg);
+}
+
+/* Zwiększenie wielkości elementu <h1> */
+h1{
+    font-size: 50px;
+    font-style: italic;
+}
+
+.navbar{
+    background-color: rgb(177, 176, 176);
+    overflow: hidden;
+}
+
+.navbar a{
+    color:white;
+    float: right;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 14px 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main{
+    flex: 65%;
+    background-color: white;
+    padding: 20px;
+    float: left;
+}
+
+.main p{
+    color: rgb(117, 117, 117);
+}
+
+.obrazekmain{
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 594px;
+    height: 162px;
+    display: block;
+}
+
+.obrazek2{
+    display: table;
+    width: 49%;
+    float: left;
+    padding: 5px;
+}
+
+.side{
+    flex: 35%;
+    background-color: rgb(253, 211, 217);
+    padding: 20px;
+    float: right;
+}
+
+.side p{
+    text-align: center;
+    color: rgb(117, 117, 117);
+}
+
+.obrazek{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: 250px;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: rgb(177, 176, 176);
+    font-size: 17px;
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
