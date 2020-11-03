@@ -1,0 +1,76 @@
+<!-- Tatiana Cieślar gr. PI-A sem. V kier. Informatyka -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Kalkulator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style type="text/css"> body {font-size:20px; padding:20px 0px 20px 40px; font-family: Arial, Helvetica, sans-serif}
+        </style>
+
+        <link rel="stylesheet" href="styl.css">
+
+        <script src="program.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    </head>
+
+    <body>
+        <div class="calculator">
+            <div id="Equation" class="Equation"></div>
+            <div id="Result" class="Result">0</div>
+        
+            <div class="row">
+                <button onclick="ClickArctan()" class="operations" id="arctan">$$\arctan {x}$$</button>
+                <button onclick="ClickLn()" class="operations" id="ln">$$\ln {x}$$</button>
+                <button onclick="ClickLog()" class="operations" id="log">$$\log {x}$$</button>
+                <button onclick="ClickCE()" class="operations" id="CE">CE</button>
+                <button onclick="ClickC()" class="operations" id="C">C</button>
+            </div>
+        
+            <div class="row">
+                <button onclick="ClickArccos()" class="operations" id="arccos">$$\arccos {x}$$</button>
+                <button onclick="ClickOperation(this.id)" class="operations" id="^">\(x^y\)</button>
+                <button onclick="ClickPower()" class="operations" id="power">\(x^2\)</button>
+                <button onclick="ClickSqrt()" class="operations" id="sqrt">$$\sqrt{x}$$</button>
+                <button onclick="ClickOperation(this.id)" class="operations" id="/">$$\mathbf /$$</button>
+            </div>
+        
+            <div class="row">
+                <button onclick="ClickArcsin()" class="operations" id="arcsin">$$\arcsin {x}$$</button>
+                <button onclick="ClickNumber(this.id)" class="numbers" id="7">$$\mathbf 7$$</button>
+                <button onclick="ClickNumber(this.id)" class="numbers" id="8">$$\mathbf 8$$</button>
+                <button onclick="ClickNumber(this.id)" class="numbers" id="9">$$\mathbf 9$$</button>
+                <button onclick="ClickOperation(this.id)" class="operations" id="*">$$*$$</button>
+            </div>
+        
+            <div class="row">
+                <button onclick="ClickTan()" class="operations" id="tan">$$\tan {x}$$</button>
+                <button onclick="ClickNumber(this.id)" class="numbers" id="4">$$\mathbf 4$$</button>
+                <button onclick="ClickNumber(this.id)" class="numbers" id="5">$$\mathbf 5$$</button>
+                <button onclick="ClickNumber(this.id)" class="numbers" id="6">$$\mathbf 6$$</button>
+                <button onclick="ClickOperation(this.id)" class="operations" id="-">$$\mathbf -$$</button>
+            </div>
+        
+            <div class="row">
+                <button onclick="ClickCos()" class="operations" id="cos">$$\cos {x}$$</button>
+                <button onclick="ClickNumber(this.id)" class="numbers" id="1">$$\mathbf 1$$</button>
+                <button onclick="ClickNumber(this.id)" class="numbers" id="2">$$\mathbf 2$$</button>
+                <button onclick="ClickNumber(this.id)" class="numbers" id="3">$$\mathbf 3$$</button>
+                <button onclick="ClickOperation(this.id)" class="operations" id="+">$$\mathbf +$$</button>
+            </div>
+        
+            <div class="row">
+                <button onclick="ClickSin()" class="operations" id="sin">$$\sin {x}$$</button>
+                <button onclick="ClickPlusMinus()" class="operations" id="plus_minus">$$\mathbf {+/-}$$</button>
+                <button onclick="ClickNumber(this.id)" class="numbers" id="0">$$\mathbf 0$$</button>
+                <button onclick="ClickComma()" class="operations" id=".">$$\mathbf .$$</button>
+                <button onclick="ClickEquals(this.id)" class="operations" id="equals">$$\mathbf =$$</button>
+            </div>
+        </div>
+        
+    </body>
+</html>
