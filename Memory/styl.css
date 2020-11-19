@@ -1,0 +1,53 @@
+.memory-game
+{
+  width: 780px;
+  position: relative;
+  margin: auto;
+  box-shadow: 5px 5px 5px 5px rgba(145, 143, 143, 0.5);
+  color: rgb(75, 74, 74);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(246, 234, 250);
+
+}
+
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Usuwa czarną ramkę nad zawartością buttona */
+*,*:focus,*:hover
+{
+  outline:none;
+}
+
+.card
+{
+    padding: 20px 10px 20px 10px;
+    width: 110px;
+    height: 80px;
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+    border-color: rgb(204, 202, 202);
+    background-color: white;
+    margin: 10px;
+}
+
+.hidden{
+    
+    background-image: url(https://image.freepik.com/free-vector/abstract-colorful-small-triangle-pattern-banner-design_1017-25805.jpg);
+    text-indent: -9999px; 
+}
+
+.opened{
+    font-size: 15px;
+    background-color: rgb(174, 147, 185);
+}
+
+.matched{
+
+    background-color: rgb(3, 21, 82);
+    font-size: 0px;
+}
